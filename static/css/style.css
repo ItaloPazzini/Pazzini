@@ -1,0 +1,125 @@
+/* Garante que todo o site use box-sizing: border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .pokedex-container {
+    width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(160deg, #cf2027, #d1252a 20%, #e64340 80%, #f0575a);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Parte superior (onde ficam as luzes e o título) */
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* As luzes indicadoras (só decoração) */
+  .indicator-lights {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  
+  .light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  }
+  
+  .light.red {
+    background: radial-gradient(#ff5b5b, #c30c0c);
+  }
+  
+  .light.yellow {
+    background: radial-gradient(#fff45b, #c3b70c);
+  }
+  
+  .light.green {
+    background: radial-gradient(#69ff5b, #0cc32f);
+  }
+  
+  /* Título da Pokédex */
+  .title {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  /* Área principal, que simula a "tela" da Pokédex */
+  .screen-area {
+    background: #fafafa;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 15px;
+    min-height: 300px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Barra de busca */
+  .search-input {
+    width: 60%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+  }
+  
+  .search-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #4f8ef7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #367add;
+  }
+  
+  /* Container de resultados */
+  .resultados {
+    margin-top: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 180px;
+  }
+  
+  .resultados h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Imagem do Pokémon */
+  .pokemon-image {
+    display: block;
+    margin: 10px auto;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
+  
+  /* Texto de stats e etc. */
+  .resultados p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+  }
+  
